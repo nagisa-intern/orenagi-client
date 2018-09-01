@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">orenagi</string>
+    <string name="update">更新する</string>
+    <string name="explain">現在地周辺のマンガ</string>
+</resources>

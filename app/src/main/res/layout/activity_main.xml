@@ -7,11 +7,23 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/address"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:text="現在地"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <TextView
+        android:id="@+id/fullAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:paddingRight="20dp"
         android:text="TextView"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,35 +34,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="81dp"
         android:text="@string/explain"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/address" />
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20dp"
-        tools:context=".MainActivity">
-
-        <TextView
-            android:id="@+id/text_view1"
-            android:textSize="20sp"
-            android:layout_margin="20dp"
-            android:textColor="#44f"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
-        android:layout_height="409dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="405dp"
+        android:layout_marginTop="54dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
